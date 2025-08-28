@@ -1,21 +1,36 @@
-MIT License
+# Gmail Cleaner 🧹📬
 
-Copyright (c) 2025 Viaceslav
+Java-based console application for cleaning up your Gmail inbox using the Gmail API. Built with a clean MVC architecture and designed for extensibility and clarity.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## 🚀 Features
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+- Authenticate with Gmail via OAuth 2.0
+- List and delete emails based on custom filters
+- Console-based user interface
+- Modular MVC structure (Model-View-Controller)
+- Input validation and error handling
+- Easily extendable for new features
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+## 🧠 Architecture
+
+This project follows the MVC pattern:
+
+- **Model**: `Email.java` — represents email data  
+- **View**: `ConsoleView.java` — handles user interaction  
+- **Controller**: `GmailController.java` — coordinates logic  
+- **Service**: `GmailService.java` — communicates with Gmail API
+
+## 📦 Technologies
+
+- Java 17+
+- Maven
+- Gmail API
+- OAuth 2.0
+- IntelliJ IDEA (recommended)
+
+## 🛠️ Setup
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/your-username/gmail-cleaner.git
+   cd gmail-cleaner
